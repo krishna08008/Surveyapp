@@ -1,0 +1,22 @@
+    <div ng-repeat="surveydetail in $ctrl.surveys">
+    <h1>Hi {{surveydetail.your_name}}, create your questions for the below survey</h1>
+    <div class="surveydetails">
+    <h4>{{surveydetail.survey_name}}</h4>
+    <h3>{{surveydetail.survey_description}}</h3>
+    </div>
+    </div>
+<!--    <textarea class="surveyquestion" ng-click="addQuestion()" ng-model="addSurveyQuestion" ng-blur="saveQuestion()">Add your question</textarea>-->
+
+
+    <h1 class="addnewquestion" ng-click="addNewQuestion($event)">+ Add new question</h1>
+
+        <div class="options"></div>
+    <span ng-show="showhide" class="addnew">+
+        <ul>
+            <li ng-click="addRadio($event)">Add a radio button</li>
+            <li ng-click="addCheckbox($event)">Add a check box</li>
+            <li ng-click="addTextbox($event)">Add a textbox</li>
+        </ul>
+
+    </span>
+    <div class="questioncontainer"></div>

@@ -1,0 +1,53 @@
+<head>
+<base href="/">
+<style>
+.surveyquestion{
+  font-size:20px;
+  border:solid 1px #ccc;
+  width:100%;
+  resize: none;
+}
+.addnew{
+  font-size:60px;
+  cursor: pointer;
+  position: relative;
+}
+.addnew ul{
+  display: none;
+  font-size: 18px;
+  list-style: none;
+  position:absolute;
+  top:100%;
+  width:200px;
+    background: #e2e1e1;
+  margin-top:-15px
+}
+.addnew ul li{
+  padding:10px;
+}
+.addnew:hover ul{
+  display: block;
+}
+.option{
+  padding:10px;
+}
+.addnewquestion{
+    font-size:21px;
+    background:#666;
+    padding:15px;
+    color:#fff;
+    clear:both;
+    float:right;
+    margin-top:20px;
+}
+.surveydetails{
+  padding:20px;
+  background:#f4f4f4;
+  border:solid 1px #ccc;
+  margin-bottom:20px;
+}
+</style>
+</head>
+<body ng-app="mysurveys" style="padding:30px">
+  <mysurveys></mysurveys>  
+</body>

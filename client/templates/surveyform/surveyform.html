@@ -1,0 +1,17 @@
+<h1>this is the survey form</h1>
+<form name="surveyform">
+<input type="text" name="surveyName" placeholder="Survey name" ng-model="surveyName" required><br/><br/>
+ <div ng-messages="surveyform.surveyName.$error" style="color:maroon" role="alert">
+<span ng-show = "surveyform.surveyName.$error.required">First Name is required.</span>
+ </div>
+<textarea  name="surveyDetails" placeholder="Survey details" ng-model="surveyDetails" required></textarea><br/><br/>
+<input type="text" name="Email" placeholder="Your Email" ng-model="surveyerEmail" required><br/><br/>
+ <div ng-messages="surveyform.Email.$error" style="color:maroon" role="alert">
+<span ng-show = "surveyform.Email.$error.required">Email is required.</span>
+ </div>
+<input type="text" name="Name" placeholder="Your Name" ng-model="surveyerName"><br/><br/>
+<input type="number" name="Mobile" placeholder="Your Mobile" ng-model="surveyerMobile" required><br/><br/>
+
+<button ng-click="surveyFormSubmit()" ng-disabled="surveyform.surveyName.$error.required || surveyform.Email.$error.required">Submit</button>
+</form>
+
